@@ -50,7 +50,7 @@ app.post("/form", async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   //console.log(process.env.MAILGUN_API_KEY, process.env.MAILGUN_DOMAIN);
   console.log("Server has started 🤓");
 });
